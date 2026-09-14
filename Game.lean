@@ -1,11 +1,14 @@
 import Game.Levels.DemoWorld
 
 -- Here's what we'll put on the title screen
-Title "Hello World Game"
+Title "L∃∀Ning Into Group Theory"
 Introduction
 "
-This text appears on the starting page where one selects the world/level to play.
-You can use **markdown**.
+# H1 Welcome to L∃∀Ning Into Group Theory!
+
+*An introduction to group theory through Lean.*
+
+In this game, we will create the basic structures that group theory is concerned with, and prove some fundamental lemmas about them.
 "
 
 Info "
