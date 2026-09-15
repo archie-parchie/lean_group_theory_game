@@ -12,18 +12,16 @@ In this game, we will create the basic structures that group theory is concerned
 "
 
 Info "
-Here you can put additional information about the game. It is accessible
-from the starting through the drop-down menu.
+*Game version: 1.0*
 
-For example: Game version, Credits, Link to Github and Zulip, etc.
-
-Use **markdown**.
+# Credits
+This game was created by Archisha Biswas (Department of Computer Science) under the supervision of Dr Robert Kropholler (Mathematics Institute) under the University of Warwick's Undergraduate Research Support Scheme.
 "
 
 /-! Information to be displayed on the servers landing page. -/
 Languages "en"
-CaptionShort "Game Template"
-CaptionLong "You should use this game as a template for your own game and add your own levels."
+CaptionShort "An introduction to group theory through Lean"
+CaptionLong "In this game, you will prove fundamental facts about groups, subgroups, and group homomorphisms."
 -- Prerequisites "" -- add this if your game depends on other games
 -- CoverImage "images/cover.png"
 

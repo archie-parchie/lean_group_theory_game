@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-14\n"
+"POT-Creation-Date: 2026-09-15\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -33,19 +33,6 @@ msgstr ""
 msgid "intermediate goal solved! 🎉"
 msgstr ""
 
-#: Game
-msgid "You should use this game as a template for your own game and add your own levels."
-msgstr ""
-
-#: Game
-msgid "Here you can put additional information about the game. It is accessible\n"
-"from the starting through the drop-down menu.\n"
-"\n"
-"For example: Game version, Credits, Link to Github and Zulip, etc.\n"
-"\n"
-"Use **markdown**."
-msgstr ""
-
 #: Game.Levels.DemoWorld.L01_HelloWorld
 msgid "This last message appears if the level is solved."
 msgstr ""
@@ -54,6 +41,17 @@ msgstr ""
 msgid "This text is shown as first message when the level is played.\n"
 "You can insert hints in the proof below. They will appear in this side panel\n"
 "depending on the proof a user provides."
+msgstr ""
+
+#: Game
+msgid "*Game version: 1.0*\n"
+"\n"
+"# Credits\n"
+"This game was created by Archisha Biswas (Department of Computer Science) under the supervision of Dr Robert Kropholler (Mathematics Institute) under the University of Warwick's Undergraduate Research Support Scheme."
+msgstr ""
+
+#: Game
+msgid "In this game, you will prove fundamental facts about groups, subgroups, and group homomorphisms."
 msgstr ""
 
 #: Game.Levels.DemoWorld
@@ -79,5 +77,5 @@ msgid "Demo World"
 msgstr ""
 
 #: Game
-msgid "Game Template"
+msgid "An introduction to group theory through Lean"
 msgstr ""
