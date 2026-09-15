@@ -13,6 +13,7 @@ msgid "level completed with warnings… 🎭"
 msgstr ""
 
 #: Game.Levels.DemoWorld.L01_HelloWorld
+#: Game.Levels.MyWorld.L01_hello
 msgid "Hello World"
 msgstr ""
 
@@ -27,6 +28,10 @@ msgstr ""
 #. §0: `«{g}»`
 #: Game.Levels.DemoWorld.L01_HelloWorld
 msgid "You should use §0 now."
+msgstr ""
+
+#: Game.Levels.MyWorld.L01_hello
+msgid "The message shown when the level is completed"
 msgstr ""
 
 #: GameServer.RpcHandlers
@@ -48,6 +53,14 @@ msgid "*Game version: 1.0*\n"
 "\n"
 "# Credits\n"
 "This game was created by Archisha Biswas (Department of Computer Science) under the supervision of Dr Robert Kropholler (Mathematics Institute) under the University of Warwick's Undergraduate Research Support Scheme."
+msgstr ""
+
+#: Game.Levels.MyWorld.L01_hello
+msgid "A message shown at the beginning of the level. Use it to explain any new concepts."
+msgstr ""
+
+#: Game.Levels.MyWorld
+msgid "This introduction text is shown when one first enters a world."
 msgstr ""
 
 #: Game
@@ -76,6 +89,15 @@ msgstr ""
 msgid "Demo World"
 msgstr ""
 
+#: Game.Levels.MyWorld
+msgid "My First World"
+msgstr ""
+
 #: Game
 msgid "An introduction to group theory through Lean"
+msgstr ""
+
+#. §0: $\\iff$
+#: Game.Levels.MyWorld.L01_hello
+msgid "The exercise statement in natural language using latex: §0."
 msgstr ""
