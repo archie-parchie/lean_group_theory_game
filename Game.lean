@@ -5,7 +5,7 @@ import Game.Levels.MyWorld
 Title "L∃∀Ning Into Group Theory"
 Introduction
 "
-# H1 Welcome to L∃∀Ning Into Group Theory!
+# Welcome to L∃∀Ning Into Group Theory!
 
 *An introduction to group theory through Lean.*
 

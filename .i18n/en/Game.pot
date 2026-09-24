@@ -1,20 +1,20 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-15\n"
+"POT-Creation-Date: 2026-09-24\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
 
-#: GameServer.RpcHandlers
-msgid "level completed with warnings… 🎭"
-msgstr ""
-
 #: Game.Levels.DemoWorld.L01_HelloWorld
 #: Game.Levels.MyWorld.L01_hello
 msgid "Hello World"
+msgstr ""
+
+#: Game.Levels.MyWorld.L01_hello
+msgid "defining monoids"
 msgstr ""
 
 #: GameServer.RpcHandlers
@@ -25,9 +25,8 @@ msgstr ""
 msgid "L∃∀Ning Into Group Theory"
 msgstr ""
 
-#. §0: `«{g}»`
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "You should use §0 now."
+#: Game.Levels.MyWorld.L01_hello
+msgid "a proof that elem * id = elem"
 msgstr ""
 
 #: Game.Levels.MyWorld.L01_hello
@@ -38,14 +37,8 @@ msgstr ""
 msgid "intermediate goal solved! 🎉"
 msgstr ""
 
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "This last message appears if the level is solved."
-msgstr ""
-
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "This text is shown as first message when the level is played.\n"
-"You can insert hints in the proof below. They will appear in this side panel\n"
-"depending on the proof a user provides."
+#: Game.Levels.MyWorld.L01_hello
+msgid "a proof that id * elem = elem"
 msgstr ""
 
 #: Game
@@ -53,10 +46,6 @@ msgid "*Game version: 1.0*\n"
 "\n"
 "# Credits\n"
 "This game was created by Archisha Biswas (Department of Computer Science) under the supervision of Dr Robert Kropholler (Mathematics Institute) under the University of Warwick's Undergraduate Research Support Scheme."
-msgstr ""
-
-#: Game.Levels.MyWorld.L01_hello
-msgid "A message shown at the beginning of the level. Use it to explain any new concepts."
 msgstr ""
 
 #: Game.Levels.MyWorld
@@ -67,22 +56,24 @@ msgstr ""
 msgid "In this game, you will prove fundamental facts about groups, subgroups, and group homomorphisms."
 msgstr ""
 
-#: Game.Levels.DemoWorld
-msgid "This introduction is shown before one enters level 1 of the demo world. Use markdown."
-msgstr ""
-
 #: Game
-msgid "# H1 Welcome to L∃∀Ning Into Group Theory!\n"
+msgid "# Welcome to L∃∀Ning Into Group Theory!\n"
 "\n"
 "*An introduction to group theory through Lean.*\n"
 "\n"
 "In this game, we will create the basic structures that group theory is concerned with, and prove some fundamental lemmas about them."
 msgstr ""
 
-#. §0: `«{h}»`
-#. §1: `«{g}»`
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "You can either start using §0 or §1."
+#: Game.Levels.MyWorld.L01_hello
+msgid "a proof of the existence of an identity element in a group"
+msgstr ""
+
+#: Game.Levels.MyWorld.L01_hello
+msgid "defining the identity"
+msgstr ""
+
+#: Game.Levels.MyWorld.L01_hello
+msgid "defining groups"
 msgstr ""
 
 #: Game.Levels.DemoWorld
@@ -91,6 +82,67 @@ msgstr ""
 
 #: Game.Levels.MyWorld
 msgid "My First World"
+msgstr ""
+
+#: Game.Levels.MyWorld.L01_hello
+msgid "defining semigroups"
+msgstr ""
+
+#: GameServer.RpcHandlers
+msgid "level completed with warnings… 🎭"
+msgstr ""
+
+#. §0: `«{g}»`
+#: Game.Levels.DemoWorld.L01_HelloWorld
+msgid "You should use §0 now."
+msgstr ""
+
+#: Game.Levels.MyWorld.L01_hello
+msgid "intro stands for introduction"
+msgstr ""
+
+#: Game.Levels.DemoWorld.L01_HelloWorld
+msgid "This last message appears if the level is solved."
+msgstr ""
+
+#: Game.Levels.MyWorld.L01_hello
+msgid "a proof that group elements have (left) inverses"
+msgstr ""
+
+#: Game.Levels.DemoWorld.L01_HelloWorld
+msgid "This text is shown as first message when the level is played.\n"
+"You can insert hints in the proof below. They will appear in this side panel\n"
+"depending on the proof a user provides."
+msgstr ""
+
+#: Game.Levels.MyWorld.L01_hello
+msgid "allows for different cases to be dealt with"
+msgstr ""
+
+#: Game.Levels.MyWorld.L01_hello
+msgid "A message shown at the beginning of the level. Use it to explain any new concepts."
+msgstr ""
+
+#: Game.Levels.DemoWorld
+msgid "This introduction is shown before one enters level 1 of the demo world. Use markdown."
+msgstr ""
+
+#: Game.Levels.MyWorld.L01_hello
+msgid "rwa is a variant of rw"
+msgstr ""
+
+#. §0: `«{h}»`
+#. §1: `«{g}»`
+#: Game.Levels.DemoWorld.L01_HelloWorld
+msgid "You can either start using §0 or §1."
+msgstr ""
+
+#: Game.Levels.MyWorld.L01_hello
+msgid "a proof of multiplication being associative in a group"
+msgstr ""
+
+#: Game.Levels.MyWorld.L01_hello
+msgid "rw stands for rewrite"
 msgstr ""
 
 #: Game
