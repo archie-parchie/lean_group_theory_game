@@ -3,7 +3,7 @@ import Game.Source.Definitions
 
 World "GroupWorld"
 Level 1
-Title "Hello World"
+Title "One Identity"
 
 namespace MyGroup
 
@@ -62,13 +62,13 @@ Introduction "
 A message shown at the beginning of the level. Use it to explain any new concepts.
 "
 
-/-- The exercise statement in natural language using latex: $\iff$. -/
+/-- Let $g$ and $h$ be elements of a group $G$. If $g * h = h$ and $h * g = h*$, then $h$ is the group identity.-/
 Statement {G : Type _} [Group G] (g h : G) : g * h = h ∧ h * g = h → g = Identity.id := by
-  intro h
-  cases h with
-  | intro hgh hhg =>
-    have h_mult : h⁻¹ * (h * g) = h⁻¹ * h := by rw [hhg]
-    rwa [← Semigroup.mul_assoc, Group.left_inv, Monoid.id_mul] at h_mult
+  intro hyp;
+  cases hyp with
+  | intro hyp_gh hyp_hg =>
+    have hyp_mult : h⁻¹ * (h * g) = h⁻¹ * h := by rw [hyp_hg]
+    rwa [← Semigroup.mul_assoc, Group.left_inv, Monoid.id_mul] at hyp_mult
 
 Conclusion "
 The message shown when the level is completed

@@ -1,9 +1,9 @@
-import Game.Levels.GroupWorld.L01_hello
+import Game.Levels.GroupWorld.L01_one_id
 
 World "GroupWorld"
 Title "Group World"
 
 Introduction
 "
-This introduction text is shown when one first enters a world.
+In this world, you will prove two simple lemmas about groups.
 "

@@ -1,4 +1,4 @@
-/-! ... -/
+-- A file containing all of my original definitions and theorems
 
 set_option autoImplicit true
 
@@ -22,21 +22,21 @@ class Group (G : Type _) extends Monoid G, Inv G where
 /-lemma 21.3: a) Suppose that g ∈ G has the following property: for every h in G,
  - we have g · h = h · g = h. Then g = e_G. -/
 theorem one_id {G : Type _} [Group G] (g h : G) : g * h = h ∧ h * g = h → g = Identity.id := by
-  intro h
-  cases h with
-  | intro hgh hhg =>
-    have h_mult : h⁻¹ * (h * g) = h⁻¹ * h := by rw [hhg]
-    rwa [← Semigroup.mul_assoc, Group.left_inv, Monoid.id_mul] at h_mult
+  intro hyp;
+  cases hyp with
+  | intro hyp_gh hyp_hg =>
+    have hyp_mult : h⁻¹ * (h * g) = h⁻¹ * h := by rw [hyp_hg]
+    rwa [← Semigroup.mul_assoc, Group.left_inv, Monoid.id_mul] at hyp_mult
 
 /-lemma 21.3: b) Suppose that g ∈ G is an element. Suppose that h and h′ are also
 elements of G, so that h · g = g · h′ = e_G. Then h = h′. -/
 theorem unique_inv {G : Type _} [Group G] (g h h' : G) : h * g = Identity.id ∧ g * h'
   = Identity.id → h = h' := by
-    intro h
-    cases h with
-    | intro hhg hgh' =>
-      have p_mult : (h * g) * h' = Identity.id * h' := by rw [hhg]
-      rwa [Semigroup.mul_assoc, hgh', Monoid.mul_id, Monoid.id_mul] at p_mult
+    intro hyp
+    cases hyp with
+    | intro hyp_hg hyp_gh' =>
+      have p_mult : (h * g) * h' = Identity.id * h' := by rw [hyp_hg]
+      rwa [Semigroup.mul_assoc, hyp_gh', Monoid.mul_id, Monoid.id_mul] at p_mult
 
 -- creating an abelian group typeclass which extends the group typeclass by introducing commutative multiplication
 class Ab_Group (α : Type _) extends Group α where
@@ -134,10 +134,10 @@ class Group_Hom {G : Type _} {H : Type _} [Group G] [Group H] (f : G → H) : Pr
 theorem hom_comp_hom_is_hom {G : Type _} {H : Type _} {K : Type _} [Group G] [Group H] [Group K]
   (φ : G → H) [Group_Hom φ] (ψ : H → K) [Group_Hom ψ] : Group_Hom (ψ ∘ φ) := by
     constructor
-    intro hg hg'
+    intro hyp_g hyp_g'
     dsimp
-    have hom1 : φ (hg * hg') = φ (hg) * φ (hg') := by apply Group_Hom.hom_mul
-    have hom2 : ψ (φ (hg) * φ (hg')) = ψ (φ (hg)) * ψ (φ (hg')) := by apply Group_Hom.hom_mul
+    have hom1 : φ (hyp_g * hyp_g') = φ (hyp_g) * φ (hyp_g') := by apply Group_Hom.hom_mul
+    have hom2 : ψ (φ (hyp_g) * φ (hyp_g')) = ψ (φ (hyp_g)) * ψ (φ (hyp_g')) := by apply Group_Hom.hom_mul
     rw [hom1, hom2]
 
 -- under a homomorphism, the identity maps to the identity
