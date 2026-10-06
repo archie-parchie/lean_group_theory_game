@@ -16,7 +16,7 @@ msgstr ""
 msgid "level completed! 🎉"
 msgstr ""
 
-#: Game.Game
+#: Game
 msgid "L∃∀Ning Into Group Theory"
 msgstr ""
 
@@ -46,18 +46,18 @@ msgstr ""
 msgid "Let §0 and §1 be elements of a group §2. If §3 and §4, then §5 is the group identity."
 msgstr ""
 
-#: Game.Game
+#: Game
 msgid "*Game version: 1.0*\n"
 "\n"
 "# Credits\n"
 "This game was created by Archisha Biswas (Department of Computer Science) under the supervision of Dr Robert Kropholler (Mathematics Institute) under the University of Warwick's Undergraduate Research Support Scheme."
 msgstr ""
 
-#: Game.Game
+#: Game
 msgid "In this game, you will prove fundamental facts about groups, subgroups, and group homomorphisms."
 msgstr ""
 
-#: Game.Game
+#: Game
 msgid "# Welcome to L∃∀Ning Into Group Theory!\n"
 "\n"
 "*An introduction to group theory through Lean.*\n"
@@ -129,6 +129,6 @@ msgstr ""
 msgid "rw stands for rewrite"
 msgstr ""
 
-#: Game.Game
+#: Game
 msgid "An introduction to group theory through Lean"
 msgstr ""
