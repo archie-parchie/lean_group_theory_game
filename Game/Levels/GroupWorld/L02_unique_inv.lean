@@ -8,7 +8,7 @@ namespace MyGroup
 
 Introduction "TBA"
 
-/-- Let $g$, $h$, and $h'$ be elements of a group $G$. If $h * g = g * h′ =$ the group identity, then $h = h′$.-/
+/-- Let $g$, $h$, and $h'$ be elements of a group $G$. If $h * g = g * h' =$ the group identity, then $h = h'$.-/
 Statement {G : Type _} [Group G] (g h h' : G) : h * g = Identity.id ∧ g * h'
   = Identity.id → h = h' := by
     intro hyp

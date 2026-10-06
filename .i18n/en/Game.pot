@@ -87,11 +87,27 @@ msgstr ""
 
 #: Game.Levels.GroupWorld.L01_one_id
 #: Game.Levels.GroupWorld.L01_one_id
+#: Game.Levels.GroupWorld.L02_unique_inv
+#: Game.Levels.GroupWorld.L02_unique_inv
 msgid "TBA"
 msgstr ""
 
 #: GameServer.RpcHandlers
 msgid "level completed with warnings… 🎭"
+msgstr ""
+
+#. §0: $g$
+#. §1: $h$
+#. §2: $h'$
+#. §3: $G$
+#. §4: $h * g = g * h′ =$
+#. §5: $h = h′$
+#: Game.Levels.GroupWorld.L02_unique_inv
+msgid "Let §0, §1, and §2 be elements of a group §3. If §4 the group identity, then §5."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L02_unique_inv
+msgid "Unique Inverses"
 msgstr ""
 
 #: Game.Levels.GroupWorld.L01_one_id
