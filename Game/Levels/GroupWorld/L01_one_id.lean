@@ -58,9 +58,7 @@ TacticDoc «have»
 NewTactic intro cases rw «have»
 NewHiddenTactic rwa
 
-Introduction "
-A message shown at the beginning of the level. Use it to explain any new concepts.
-"
+Introduction "TBA"
 
 /-- Let $g$ and $h$ be elements of a group $G$. If $g * h = h$ and $h * g = h$, then $h$ is the group identity.-/
 Statement {G : Type _} [Group G] (g h : G) : g * h = h ∧ h * g = h → g = Identity.id := by
@@ -70,6 +68,4 @@ Statement {G : Type _} [Group G] (g h : G) : g * h = h ∧ h * g = h → g = Ide
     have hyp_mult : h⁻¹ * (h * g) = h⁻¹ * h := by rw [hyp_hg]
     rwa [← Semigroup.mul_assoc, Group.left_inv, Monoid.id_mul] at hyp_mult
 
-Conclusion "
-The message shown when the level is completed
-"
+Conclusion "TBA"

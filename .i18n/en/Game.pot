@@ -24,10 +24,6 @@ msgstr ""
 msgid "a proof that elem * id = elem"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L01_one_id
-msgid "The message shown when the level is completed"
-msgstr ""
-
 #: GameServer.RpcHandlers
 msgid "intermediate goal solved! 🎉"
 msgstr ""
@@ -89,6 +85,11 @@ msgstr ""
 msgid "defining semigroups"
 msgstr ""
 
+#: Game.Levels.GroupWorld.L01_one_id
+#: Game.Levels.GroupWorld.L01_one_id
+msgid "TBA"
+msgstr ""
+
 #: GameServer.RpcHandlers
 msgid "level completed with warnings… 🎭"
 msgstr ""
@@ -103,10 +104,6 @@ msgstr ""
 
 #: Game.Levels.GroupWorld.L01_one_id
 msgid "allows for different cases to be dealt with"
-msgstr ""
-
-#: Game.Levels.GroupWorld.L01_one_id
-msgid "A message shown at the beginning of the level. Use it to explain any new concepts."
 msgstr ""
 
 #: Game.Levels.GroupWorld.L01_one_id
