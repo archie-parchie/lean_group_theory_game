@@ -1,4 +1,4 @@
-import Game.levels.GroupWorld.L01_one_id
+import Game.Levels.GroupWorld.L01_one_id
 
 World "GroupWorld"
 Level 2
