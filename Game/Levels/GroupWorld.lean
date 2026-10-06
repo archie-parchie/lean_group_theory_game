@@ -1,7 +1,7 @@
-import Game.Levels.MyWorld.L01_hello
+import Game.Levels.GroupWorld.L01_hello
 
-World "MyWorld"
-Title "My First World"
+World "GroupWorld"
+Title "Group World"
 
 Introduction
 "

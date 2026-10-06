@@ -1,7 +1,7 @@
 import GameServer
-import Game.MyGroup.Definition
+import Game.Source.Definitions
 
-World "MyWorld"
+World "GroupWorld"
 Level 1
 Title "Hello World"
 
@@ -52,7 +52,10 @@ TacticDoc rw
 /-- rwa is a variant of rw-/
 TacticDoc rwa
 
-NewTactic intro cases rw
+/-- creates an intermediate hypothesis-/
+TacticDoc «have»
+
+NewTactic intro cases rw «have»
 NewHiddenTactic rwa
 
 Introduction "
