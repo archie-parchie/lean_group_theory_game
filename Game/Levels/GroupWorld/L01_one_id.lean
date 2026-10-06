@@ -62,7 +62,7 @@ Introduction "
 A message shown at the beginning of the level. Use it to explain any new concepts.
 "
 
-/-- Let $g$ and $h$ be elements of a group $G$. If $g * h = h$ and $h * g = h*$, then $h$ is the group identity.-/
+/-- Let $g$ and $h$ be elements of a group $G$. If $g * h = h$ and $h * g = h$, then $h$ is the group identity.-/
 Statement {G : Type _} [Group G] (g h : G) : g * h = h ∧ h * g = h → g = Identity.id := by
   intro hyp;
   cases hyp with
