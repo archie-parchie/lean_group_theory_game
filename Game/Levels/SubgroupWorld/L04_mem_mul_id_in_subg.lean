@@ -2,7 +2,7 @@ import Game.Levels.SubgroupWorld.L03_mem_inv_in_subg
 
 World "SubgroupWorld"
 Level 4
-Title "Membership of elements of a subset multiplied by the identity in the generated subgroup."
+Title "Membership of elements of a subset multiplied by the identity in the generated subgroup"
 
 namespace MyGroup
 
