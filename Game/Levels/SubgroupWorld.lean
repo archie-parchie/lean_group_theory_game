@@ -3,6 +3,7 @@ import Game.Levels.SubgroupWorld.L02_mem_in_subg
 import Game.Levels.SubgroupWorld.L03_mem_inv_in_subg
 import Game.Levels.SubgroupWorld.L04_mem_mul_id_in_subg
 import Game.Levels.SubgroupWorld.L05_mem_mul_mem_in_subg
+import Game.Levels.SubgroupWorld.L06_mem_mul_meminv_in_subg
 
 World "SubgroupWorld"
 Title "Subgroup World"

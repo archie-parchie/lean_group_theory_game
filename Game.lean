@@ -9,7 +9,7 @@ Introduction
 
 *An introduction to group theory through Lean.*
 
-In this game, we will create the basic structures that group theory is concerned with, and prove some fundamental lemmas about them.
+In this game, we will create the basic structures that group theory is concerned with, and prove some fundamental theorems about them.
 "
 
 Info "
