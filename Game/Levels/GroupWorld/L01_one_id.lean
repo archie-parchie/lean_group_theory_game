@@ -22,7 +22,7 @@ DefinitionDoc MyGroup.Group as "Group"
 NewDefinition MyGroup.Semigroup MyGroup.Identity MyGroup.Monoid
   MyGroup.Group
 
-/-- a proof of multiplication being associative in a group-/
+/-- a proof that multiplication in a group is associative-/
 TheoremDoc MyGroup.Semigroup.mul_assoc as "mul_assoc"
 
 /-- a proof of the existence of an identity element in a group-/

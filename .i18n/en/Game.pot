@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-06\n"
+"POT-Creation-Date: 2026-10-07\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -20,8 +20,16 @@ msgstr ""
 msgid "L∃∀Ning Into Group Theory"
 msgstr ""
 
+#: Game.Levels.SubgroupWorld.L01_sub_of_ab_is_ab
+msgid "a proof that if two members are in the subgroup, so is its product"
+msgstr ""
+
 #: Game.Levels.GroupWorld.L01_one_id
 msgid "a proof that elem * id = elem"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L01_one_id
+msgid "a proof that multiplication in a group is associative"
 msgstr ""
 
 #: GameServer.RpcHandlers
@@ -40,6 +48,10 @@ msgstr ""
 #. §5: $h$
 #: Game.Levels.GroupWorld.L01_one_id
 msgid "Let §0 and §1 be elements of a group §2. If §3 and §4, then §5 is the group identity."
+msgstr ""
+
+#: Game.Levels.SubgroupWorld.L01_sub_of_ab_is_ab
+msgid "defining subgroups"
 msgstr ""
 
 #: Game
@@ -65,8 +77,23 @@ msgstr ""
 msgid "a proof of the existence of an identity element in a group"
 msgstr ""
 
+#. §0: $G$
+#. §1: $H < G$
+#. §2: $H$
+#: Game.Levels.SubgroupWorld.L01_sub_of_ab_is_ab
+msgid "Let §0 be an abelian group, and §1 a subgroup. Then §2 is abelian."
+msgstr ""
+
+#: Game.Levels.SubgroupWorld.L01_sub_of_ab_is_ab
+msgid "a proof that if a member is in a subgroup, so is its inverse"
+msgstr ""
+
 #: Game.Levels.GroupWorld.L01_one_id
 msgid "One Identity"
+msgstr ""
+
+#: Game.Levels.SubgroupWorld.L01_sub_of_ab_is_ab
+msgid "defining abelian subgroups"
 msgstr ""
 
 #: Game.Levels.GroupWorld.L01_one_id
@@ -77,8 +104,16 @@ msgstr ""
 msgid "defining the identity"
 msgstr ""
 
+#: Game.Levels.SubgroupWorld
+msgid "In this world, you will use abelian groups and subgroups generated from a set to prove some theorems about different types of subgroups."
+msgstr ""
+
 #: Game.Levels.GroupWorld
 msgid "Group World"
+msgstr ""
+
+#: Game.Levels.SubgroupWorld
+msgid "Subgroup World"
 msgstr ""
 
 #: Game.Levels.GroupWorld.L01_one_id
@@ -86,9 +121,9 @@ msgid "defining semigroups"
 msgstr ""
 
 #: Game.Levels.GroupWorld.L01_one_id
-#: Game.Levels.GroupWorld.L01_one_id
 #: Game.Levels.GroupWorld.L02_unique_inv
-#: Game.Levels.GroupWorld.L02_unique_inv
+#: Game.Levels.SubgroupWorld.L01_sub_of_ab_is_ab
+#: Game.Levels.SubgroupWorld.L01_sub_of_ab_is_ab
 msgid "TBA"
 msgstr ""
 
@@ -96,12 +131,20 @@ msgstr ""
 msgid "level completed with warnings… 🎭"
 msgstr ""
 
+#: Game.Levels.SubgroupWorld.L01_sub_of_ab_is_ab
+msgid "defining abelian groups"
+msgstr ""
+
+#: Game.Levels.SubgroupWorld.L01_sub_of_ab_is_ab
+msgid "a proof that the identity is always in a subgroup"
+msgstr ""
+
 #. §0: $g$
 #. §1: $h$
 #. §2: $h'$
 #. §3: $G$
-#. §4: $h * g = g * h′ =$
-#. §5: $h = h′$
+#. §4: $h * g = g * h' =$
+#. §5: $h = h'$
 #: Game.Levels.GroupWorld.L02_unique_inv
 msgid "Let §0, §1, and §2 be elements of a group §3. If §4 the group identity, then §5."
 msgstr ""
@@ -114,12 +157,26 @@ msgstr ""
 msgid "intro stands for introduction"
 msgstr ""
 
+#: Game.Levels.SubgroupWorld.L01_sub_of_ab_is_ab
+msgid "a proof that multiplication in an abelian group is commutative"
+msgstr ""
+
 #: Game.Levels.GroupWorld.L01_one_id
 msgid "a proof that group elements have (left) inverses"
 msgstr ""
 
 #: Game.Levels.GroupWorld.L01_one_id
 msgid "allows for different cases to be dealt with"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L01_one_id
+#: Game.Levels.GroupWorld.L02_unique_inv
+msgid "TBA\n"
+"This level can currently only be solved in code editor mode."
+msgstr ""
+
+#: Game.Levels.SubgroupWorld.L01_sub_of_ab_is_ab
+msgid "Subgroups of Abelian Groups"
 msgstr ""
 
 #: Game.Levels.GroupWorld.L01_one_id
@@ -135,13 +192,13 @@ msgid "In this world, you will prove two simple lemmas about groups."
 msgstr ""
 
 #: Game.Levels.GroupWorld.L01_one_id
-msgid "a proof of multiplication being associative in a group"
-msgstr ""
-
-#: Game.Levels.GroupWorld.L01_one_id
 msgid "rw stands for rewrite"
 msgstr ""
 
 #: Game
 msgid "An introduction to group theory through Lean"
+msgstr ""
+
+#: Game.Levels.SubgroupWorld.L01_sub_of_ab_is_ab
+msgid "closes the main goal if its type exactly matches"
 msgstr ""

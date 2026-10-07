@@ -15,6 +15,23 @@ DefinitionDoc MyGroup.Subgroup as "Subgroup"
 /-- defining abelian subgroups-/
 DefinitionDoc MyGroup.Ab_Subgroup as "Abelian Subgroup"
 
+NewDefinition MyGroup.Ab_Group MyGroup.Subgroup MyGroup.Ab_Subgroup
+
+/-- a proof that multiplication in an abelian group is commutative-/
+TheoremDoc MyGroup.Ab_Group.mul_comm as "mul_comm"
+
+/-- a proof that the identity is always in a subgroup-/
+TheoremDoc MyGroup.Subgroup.id_mem as "id_mem"
+
+/-- a proof that if a member is in a subgroup, so is its inverse-/
+TheoremDoc MyGroup.Subgroup.inv_mem as "inv_mem"
+
+/-- a proof that if two members are in the subgroup, so is its product-/
+TheoremDoc MyGroup.Subgroup.prod_mem as "prod_mem"
+
+NewTheorem MyGroup.Ab_Group.mul_comm MyGroup.Subgroup.id_mem MyGroup.Subgroup.inv_mem
+  MyGroup.Subgroup.prod_mem
+
 /-- closes the main goal if its type exactly matches-/
 TacticDoc exact
 

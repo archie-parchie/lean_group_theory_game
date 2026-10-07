@@ -1,4 +1,5 @@
 import Game.Levels.GroupWorld
+import Game.Levels.SubgroupWorld
 
 -- Here's what we'll put on the title screen
 Title "L∃∀Ning Into Group Theory"
