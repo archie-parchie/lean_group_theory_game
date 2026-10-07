@@ -95,7 +95,7 @@ theorem mem_in_subg {G : Type _} [Group G] (S : MySet G) (a : G) (ha : a ∈ S) 
   Generated_Subgroup S a := by
     apply Generated_Subgroup.base ha
 
--- if a in the subset, a⁻¹ in the generated subgroup
+-- if a in the subset, a⁻¹ in the subgroup generated
 theorem mem_inv_in_subg {G : Type _} [Group G] (S : MySet G) (a : G) (ha : a ∈ S) :
   Generated_Subgroup S a⁻¹ := by
     have ha_mem := by apply Generated_Subgroup.base ha
