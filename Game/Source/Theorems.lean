@@ -69,29 +69,28 @@ theorem sub_of_ab_is_ab {G : Type _} [Ab_Group G] (S : MySet G) [Subgroup S] :
     intro x y ha hb
     exact Ab_Group.mul_comm x y
 
-/- creating generated subgroups as an inductive type - the type takes a set of elements from a group
+/- creating subgroups generated from a set as an inductive type - the type takes a set of elements from a group
  - and an element of that set, and repeatedly generates a subgroup -/
 inductive Generated_Subgroup {G : Type _} [Group G] (S : MySet G) : G → Prop where
   | id : Generated_Subgroup S Identity.id
   | base {a : G} : a ∈ S → Generated_Subgroup S a
-  | inverse {a : G} : Generated_Subgroup S a → Generated_Subgroup S a⁻¹
-  | multiple {a b : G} : Generated_Subgroup S a → Generated_Subgroup S b →
+  | inv {a : G} : Generated_Subgroup S a → Generated_Subgroup S a⁻¹
+  | prod {a b : G} : Generated_Subgroup S a → Generated_Subgroup S b →
       Generated_Subgroup S (a * b)
 
-/--/ showing that a generated subgroup is a subgroup by creating an instance of the subgroup typeclass,
-- lemma 22.14? -/
+/- showing that a subgroup generated from a set is a subgroup by creating an instance of the subgroup typeclass-/
 instance {G : Type _} [Group G] (S : MySet G) : Subgroup (Generated_Subgroup S) where
   id_mem := Generated_Subgroup.id
   inv_mem := by
     intro a ha
-    apply Generated_Subgroup.inverse ha
+    apply Generated_Subgroup.inv ha
   prod_mem := by
     intro a b hab
     cases hab with
     | intro ha hb =>
-      apply Generated_Subgroup.multiple ha hb
+      apply Generated_Subgroup.prod ha hb
 
--- if a in the subset, a in the generated subgroup
+-- if a in the subset, a in the subgroup generated
 theorem mem_in_subg {G : Type _} [Group G] (S : MySet G) (a : G) (ha : a ∈ S) :
   Generated_Subgroup S a := by
     apply Generated_Subgroup.base ha
@@ -100,29 +99,29 @@ theorem mem_in_subg {G : Type _} [Group G] (S : MySet G) (a : G) (ha : a ∈ S) 
 theorem mem_inv_in_subg {G : Type _} [Group G] (S : MySet G) (a : G) (ha : a ∈ S) :
   Generated_Subgroup S a⁻¹ := by
     have ha_mem := by apply Generated_Subgroup.base ha
-    apply Generated_Subgroup.inverse
+    apply Generated_Subgroup.inv
     assumption
 
 -- if a in the subset, a * id in the generated subgroup
 theorem mem_mul_id_in_subg {G : Type _} [Group G] (S : MySet G) (a : G) (ha : a ∈ S) :
   Generated_Subgroup S (a * Identity.id) := by
     have ha_mem := by apply Generated_Subgroup.base ha
-    apply Generated_Subgroup.multiple ha_mem Generated_Subgroup.id
+    apply Generated_Subgroup.prod ha_mem Generated_Subgroup.id
 
 -- if a, b in the subset, a * b in the generated subgroup
 theorem mem_mul_mem_in_subg {G : Type _} [Group G] (S : MySet G) (a b : G) (ha : a ∈ S)
   (hb : b ∈ S) : Generated_Subgroup S (a * b) := by
     have ha_mem := by apply Generated_Subgroup.base ha
     have hb_mem := by apply Generated_Subgroup.base hb
-    apply Generated_Subgroup.multiple ha_mem hb_mem
+    apply Generated_Subgroup.prod ha_mem hb_mem
 
 -- if a, b in the subset, then a * b⁻¹ is in the generated subgroup
 theorem mem_mul_meminv_in_subg {G : Type _} [Group G] (S : MySet G) (a b : G) (ha : a ∈ S)
   (hb : b ∈ S) : Generated_Subgroup S (a * b⁻¹) := by
     have ha_mem := by apply Generated_Subgroup.base ha
     have hb_mem := by apply Generated_Subgroup.base hb
-    have hb_inv := by apply Generated_Subgroup.inverse hb_mem
-    apply Generated_Subgroup.multiple ha_mem hb_inv
+    have hb_inv := by apply Generated_Subgroup.inv hb_mem
+    apply Generated_Subgroup.prod ha_mem hb_inv
 
 -- creating a group homomorphism typeclass which takes two groups of unknown types and a function between them
 class Group_Hom {G : Type _} {H : Type _} [Group G] [Group H] (f : G → H) : Prop where

@@ -23,19 +23,19 @@ NewDefinition MyGroup.Semigroup MyGroup.Identity MyGroup.Monoid
   MyGroup.Group
 
 /-- a proof that multiplication in a group is associative-/
-TheoremDoc MyGroup.Semigroup.mul_assoc as "mul_assoc"
+TheoremDoc MyGroup.Semigroup.mul_assoc as "Semigroup.mul_assoc"
 
 /-- a proof of the existence of an identity element in a group-/
-TheoremDoc MyGroup.Identity.id as "id"
+TheoremDoc MyGroup.Identity.id as "Identity.id"
 
 /-- a proof that id * elem = elem-/
-TheoremDoc MyGroup.Monoid.id_mul as "id_mul"
+TheoremDoc MyGroup.Monoid.id_mul as "Monoid.id_mul"
 
 /-- a proof that elem * id = elem-/
-TheoremDoc MyGroup.Monoid.mul_id as "mul_id"
+TheoremDoc MyGroup.Monoid.mul_id as "Monoid.mul_id"
 
 /-- a proof that group elements have (left) inverses-/
-TheoremDoc MyGroup.Group.left_inv as "leftinv"
+TheoremDoc MyGroup.Group.left_inv as "Group.left_inv"
 
 NewTheorem MyGroup.Semigroup.mul_assoc MyGroup.Identity.id MyGroup.Monoid.id_mul
   MyGroup.Monoid.mul_id MyGroup.Group.left_inv

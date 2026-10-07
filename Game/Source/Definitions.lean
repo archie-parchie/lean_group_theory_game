@@ -40,3 +40,24 @@ class Subgroup {G : Type _} [Group G] (S : MySet G) : Prop where
 -- defining an abelian subgroup as a subgroup which takes a set of elements of an abelian group
 def Ab_Subgroup {G : Type _} [Ab_Group G] (S : MySet G) : Prop :=
   Subgroup S
+
+/- creating subgroups generated from a set as an inductive type - the type takes a set of elements from a group
+ - and an element of that set, and repeatedly generates a subgroup -/
+inductive Generated_Subgroup {G : Type _} [Group G] (S : MySet G) : G → Prop where
+  | id : Generated_Subgroup S Identity.id
+  | base {a : G} : a ∈ S → Generated_Subgroup S a
+  | inv {a : G} : Generated_Subgroup S a → Generated_Subgroup S a⁻¹
+  | prod {a b : G} : Generated_Subgroup S a → Generated_Subgroup S b →
+      Generated_Subgroup S (a * b)
+
+/- showing that a subgroup generated from a set is a subgroup by creating an instance of the subgroup typeclass-/
+instance {G : Type _} [Group G] (S : MySet G) : Subgroup (Generated_Subgroup S) where
+  id_mem := Generated_Subgroup.id
+  inv_mem := by
+    intro a ha
+    apply Generated_Subgroup.inv ha
+  prod_mem := by
+    intro a b hab
+    cases hab with
+    | intro ha hb =>
+      apply Generated_Subgroup.prod ha hb
