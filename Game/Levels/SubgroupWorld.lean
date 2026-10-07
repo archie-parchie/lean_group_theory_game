@@ -1,4 +1,5 @@
 import Game.Levels.SubgroupWorld.L01_sub_of_ab_is_ab
+import Game.Levels.SubgroupWorld.L02_mem_in_subg
 
 World "SubgroupWorld"
 Title "Subgroup World"
