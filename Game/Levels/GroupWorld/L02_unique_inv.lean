@@ -6,7 +6,8 @@ Title "Unique Inverses"
 
 namespace MyGroup
 
-Introduction "TBA"
+Introduction "TBA
+This level can currently only be solved in code editor mode."
 
 /-- Let $g$, $h$, and $h'$ be elements of a group $G$. If $h * g = g * h' =$ the group identity, then $h = h'$.-/
 Statement {G : Type _} [Group G] (g h h' : G) : h * g = Identity.id ∧ g * h'

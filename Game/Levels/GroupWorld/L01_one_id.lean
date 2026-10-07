@@ -58,7 +58,8 @@ TacticDoc «have»
 NewTactic intro cases rw «have»
 NewHiddenTactic rwa
 
-Introduction "TBA"
+Introduction "TBA
+This level can currently only be solved in code editor mode."
 
 /-- Let $g$ and $h$ be elements of a group $G$. If $g * h = h$ and $h * g = h$, then $h$ is the group identity.-/
 Statement {G : Type _} [Group G] (g h : G) : g * h = h ∧ h * g = h → g = Identity.id := by

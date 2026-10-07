@@ -45,7 +45,6 @@ class Ab_Group (α : Type _) extends Group α where
 /- custom set declaration using the first few lines of the inbuilt mathlib set declaration -
  - see here: https://github.com/leanprover/lean4/blob/master/tests/elab/set.lean. This removes
  - any dependencies on libraries but is much less functional than a regular set.-/
-universe u
 
 abbrev MySet (α : Type u) := α → Prop
 
