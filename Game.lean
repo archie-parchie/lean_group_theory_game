@@ -8,7 +8,7 @@ Introduction
 "
 # Welcome to L∃∀Ning Into Group Theory!
 
-*An introduction to group theory through Lean.*
+*An introduction to formalisation and group theory through Lean.*
 
 In this game, we will create the basic structures that group theory is concerned with, and prove some fundamental theorems about them.
 "
