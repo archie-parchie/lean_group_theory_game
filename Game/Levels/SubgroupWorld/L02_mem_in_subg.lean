@@ -7,7 +7,7 @@ Title "Membership of a subgroup generated from a subset"
 namespace MyGroup
 
 /-- defining subgroups generated from a set-/
-DefinitionDoc MyGroup.Generated_Subgroup as "Generated_Subgroup"
+DefinitionDoc MyGroup.Generated_Subgroup as "Generated Subgroup"
 
 NewDefinition MyGroup.Generated_Subgroup
 

@@ -127,6 +127,18 @@ theorem mem_mul_meminv_in_subg {G : Type _} [Group G] (S : MySet G) (a b : G) (h
 class Group_Hom {G : Type _} {H : Type _} [Group G] [Group H] (f : G → H) : Prop where
   hom_mul : ∀ g g' : G, f (g * g') = (f g) * (f g')
 
+-- under a homomorphism, the identity maps to the identity
+theorem id_to_id_under_hom {G : Type _} {H : Type _} [Group G] [Group H] (φ : G → H) [Group_Hom φ]
+  : φ Identity.id = Identity.id := by
+    have idh : Identity.id * φ Identity.id = φ Identity.id := by apply Monoid.id_mul
+    symm
+    have invh : ((φ Identity.id)⁻¹ * (φ Identity.id)) = Identity.id := by apply Group.left_inv
+    rw [←invh, Semigroup.mul_assoc] at idh
+    have homg : φ (Identity.id * Identity.id) = φ Identity.id * φ Identity.id :=
+      by apply Group_Hom.hom_mul
+    rw [←homg, Monoid.id_mul,Group.left_inv] at idh
+    rw [idh]
+
 /-lemma 25.4: Suppose that ϕ: G → H is a homomorphism. Suppose that ψ : H → K is a homomorphism.
  - Then ψ ◦ ϕ: G → K is a homomorphism. -/
 theorem hom_comp_hom_is_hom {G : Type _} {H : Type _} {K : Type _} [Group G] [Group H] [Group K]
@@ -137,15 +149,3 @@ theorem hom_comp_hom_is_hom {G : Type _} {H : Type _} {K : Type _} [Group G] [Gr
     have hom1 : φ (hyp_g * hyp_g') = φ (hyp_g) * φ (hyp_g') := by apply Group_Hom.hom_mul
     have hom2 : ψ (φ (hyp_g) * φ (hyp_g')) = ψ (φ (hyp_g)) * ψ (φ (hyp_g')) := by apply Group_Hom.hom_mul
     rw [hom1, hom2]
-
--- under a homomorphism, the identity maps to the identity
-theorem id_to_id_under_hom {G : Type _} {H : Type _} [Group G] [Group H] (φ : G → H) [Group_Hom φ]
-  : φ Identity.id = Identity.id := by
-    have idh : Identity.id * φ Identity.id = φ Identity.id  := by apply Monoid.id_mul
-    symm
-    have invh : ((φ Identity.id)⁻¹ * (φ Identity.id)) = Identity.id := by apply Group.left_inv
-    rw [←invh, Semigroup.mul_assoc] at idh
-    have homg : φ (Identity.id * Identity.id) = φ Identity.id * φ Identity.id :=
-      by apply Group_Hom.hom_mul
-    rw [←homg, Monoid.id_mul,Group.left_inv] at idh
-    rw [idh]

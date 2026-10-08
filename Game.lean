@@ -1,5 +1,6 @@
 import Game.Levels.GroupWorld
 import Game.Levels.SubgroupWorld
+import Game.Levels.HomomorphismWorld
 
 -- Here's what we'll put on the title screen
 Title "L∃∀Ning Into Group Theory"

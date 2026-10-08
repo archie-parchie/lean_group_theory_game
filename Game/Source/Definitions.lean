@@ -61,3 +61,7 @@ instance {G : Type _} [Group G] (S : MySet G) : Subgroup (Generated_Subgroup S) 
     cases hab with
     | intro ha hb =>
       apply Generated_Subgroup.prod ha hb
+
+-- creating a group homomorphism typeclass which takes two groups of unknown types and a function between them
+class Group_Hom {G : Type _} {H : Type _} [Group G] [Group H] (f : G → H) : Prop where
+  hom_mul : ∀ g g' : G, f (g * g') = (f g) * (f g')
