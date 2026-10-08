@@ -1,4 +1,5 @@
 import Game.Levels.HomomorphismWorld.L01_id_to_id_under_hom
+import Game.Levels.HomomorphismWorld.L02_hom_comp_hom_is_hom
 
 World "HomomorphismWorld"
 Title "Homomorphism World"

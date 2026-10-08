@@ -139,8 +139,8 @@ theorem id_to_id_under_hom {G : Type _} {H : Type _} [Group G] [Group H] (φ : G
     rw [←homg, Monoid.id_mul,Group.left_inv] at idh
     rw [idh]
 
-/-lemma 25.4: Suppose that ϕ: G → H is a homomorphism. Suppose that ψ : H → K is a homomorphism.
- - Then ψ ◦ ϕ: G → K is a homomorphism. -/
+/-lemma 25.4: Suppose that ϕ : G → H is a homomorphism. Suppose that ψ : H → K is a homomorphism.
+ - Then ψ ◦ ϕ : G → K is a homomorphism. -/
 theorem hom_comp_hom_is_hom {G : Type _} {H : Type _} {K : Type _} [Group G] [Group H] [Group K]
   (φ : G → H) [Group_Hom φ] (ψ : H → K) [Group_Hom ψ] : Group_Hom (ψ ∘ φ) := by
     constructor
